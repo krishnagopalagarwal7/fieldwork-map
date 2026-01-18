@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Fieldwork Map of India</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="title">
+      Fieldwork Map of India
+      <span class="subtitle">Videos from field visits on welfare schemes</span>
+    </div>
+
+    <div class="scheme-selector">
+      <label for="schemeSelect">Scheme</label>
+      <select id="schemeSelect">
+        <option value="ALL">All</option>
+        <option value="MDM">MDM</option>
+        <option value="ICDS">ICDS</option>
+        <option value="PDS">PDS</option>
+        <option value="NREGA">NREGA</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Main layout -->
+  <main class="main-layout">
+
+    <!-- Map panel -->
+    <section class="map-panel">
+      <div id="map"></div>
+    </section>
+
+    <!-- Side panel (future use) -->
+    <aside class="side-panel">
+      <h3>About this project</h3>
+      <p>
+        This space can be used to add photographs, short notes from the field,
+        summaries, legends, or explanations of schemes.
+      </p>
+
+      <div class="placeholder-box">
+        Future content area
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
