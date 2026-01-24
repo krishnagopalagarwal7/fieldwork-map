@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <title>Fieldwork Map of India</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link
@@ -15,49 +14,63 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="top-bar">
-    <div class="title">
-      Fieldwork Map of India
-      <span class="subtitle">Videos from field visits on welfare schemes</span>
+<header class="top-bar">
+  <div class="title">
+    Fieldwork Map of India
+    <span class="subtitle">Videos from field visits on welfare schemes</span>
+  </div>
+
+  <div class="scheme-selector">
+    <label>Scheme</label>
+    <select id="schemeSelect">
+      <option value="ALL">All</option>
+      <option value="MDM">MDM</option>
+      <option value="ICDS">ICDS</option>
+      <option value="PDS">PDS</option>
+      <option value="NREGA">NREGA</option>
+    </select>
+  </div>
+</header>
+
+<main class="main-layout">
+
+  <section class="map-panel">
+    <div id="map"></div>
+  </section>
+
+  <aside class="side-panel">
+    <h3>About this project</h3>
+    <p>
+      Field visit videos and visuals documenting welfare scheme
+      implementation across districts.
+    </p>
+    <div class="placeholder-box">Future content</div>
+  </aside>
+
+</main>
+
+<section class="image-section">
+  <h3>Fieldwork Gallery</h3>
+
+  <div class="carousel">
+    <button class="nav prev">‹</button>
+
+    <div class="carousel-track">
+      <img src="images/img1.jpg" alt="">
+      <img src="images/img2.jpg" alt="">
+      <img src="images/img3.jpg" alt="">
+      <img src="images/img4.jpg" alt="">
+      <img src="images/img5.jpg" alt="">
     </div>
 
-    <div class="scheme-selector">
-      <label for="schemeSelect">Scheme</label>
-      <select id="schemeSelect">
-        <option value="ALL">All</option>
-        <option value="MDM">MDM</option>
-        <option value="ICDS">ICDS</option>
-        <option value="PDS">PDS</option>
-        <option value="NREGA">NREGA</option>
-      </select>
-    </div>
-  </header>
+    <button class="nav next">›</button>
+  </div>
 
-  <!-- Main layout -->
-  <main class="main-layout">
+  <div class="dots"></div>
+</section>
 
-    <!-- Map panel -->
-    <section class="map-panel">
-      <div id="map"></div>
-    </section>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
 
-    <!-- Side panel (future use) -->
-    <aside class="side-panel">
-      <h3>About this project</h3>
-      <p>
-        This space can be used to add photographs, short notes from the field,
-        summaries, legends, or explanations of schemes.
-      </p>
-
-      <div class="placeholder-box">
-        Future content area
-      </div>
-    </aside>
-
-  </main>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/map.js"></script>
 </body>
 </html>
