@@ -5,11 +5,14 @@
   <title>Fieldwork Map of India</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Leaflet -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -41,7 +44,7 @@
   <aside class="side-panel">
     <h3>About this project</h3>
     <p>
-      Field visit videos and visuals documenting welfare scheme
+      Field visit videos and images documenting welfare scheme
       implementation across districts.
     </p>
     <div class="placeholder-box">Future content</div>
@@ -49,6 +52,7 @@
 
 </main>
 
+<!-- ---------- Image Gallery ---------- -->
 <section class="image-section">
   <h3>Fieldwork Gallery</h3>
 
@@ -56,11 +60,11 @@
     <button class="nav prev">‹</button>
 
     <div class="carousel-track">
-      <img src="images/img1.jpg" alt="">
-      <img src="images/img2.jpg" alt="">
-      <img src="images/img3.jpg" alt="">
-      <img src="images/img4.jpg" alt="">
-      <img src="images/img5.jpg" alt="">
+      <img src="./images/img1.jpg" alt="">
+      <img src="./images/img2.jpg" alt="">
+      <img src="./images/img3.jpg" alt="">
+      <img src="./images/img4.jpg" alt="">
+      <img src="./images/img5.jpg" alt="">
     </div>
 
     <button class="nav next">›</button>
@@ -69,8 +73,9 @@
   <div class="dots"></div>
 </section>
 
+<!-- Scripts -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/map.js"></script>
+<script src="./js/map.js"></script>
 
 </body>
 </html>

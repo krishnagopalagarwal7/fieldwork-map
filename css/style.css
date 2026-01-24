@@ -73,6 +73,7 @@ html, body {
   flex-shrink: 0;
 }
 
+/* Navigation */
 .nav {
   position: absolute;
   top: 50%;
@@ -90,6 +91,7 @@ html, body {
 .prev { left: 10px; }
 .next { right: 10px; }
 
+/* Dots */
 .dots {
   display: flex;
   justify-content: center;

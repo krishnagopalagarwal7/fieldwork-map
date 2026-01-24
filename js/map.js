@@ -22,7 +22,8 @@ function styleFn() {
   };
 }
 
-fetch("data/india_boundary.geojson")
+/* ---------- GeoJSON ---------- */
+fetch("./data/india_boundary.geojson")
   .then(r => r.json())
   .then(data => {
 
