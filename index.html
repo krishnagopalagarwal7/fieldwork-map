@@ -2,80 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Fieldwork Map of India</title>
+  <title>Fieldwork India — Welfare Scheme Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Leaflet -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  />
-
-  <!-- Local CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
-
 <body>
 
-<header class="top-bar">
-  <div class="title">
-    Fieldwork Map of India
-    <span class="subtitle">Videos from field visits on welfare schemes</span>
+  <!-- HERO HEADER -->
+  <header class="hero-header">
+    <div class="hero-bg-text">INDIA</div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="dot-accent"></span>
+        Ground-Level Documentation
+      </div>
+      <h1 class="hero-title">
+        Fieldwork<br><em>Map</em>
+      </h1>
+      <p class="hero-sub">Videos from field visits documenting welfare scheme implementation across Indian districts</p>
+      <div class="hero-meta">
+        <span>MDM · ICDS · PDS · NREGA</span>
+        <span class="divider">|</span>
+        <span id="videoCount">Loading…</span>
+      </div>
+    </div>
+    <div class="hero-scheme-bar">
+      <span class="filter-label">Filter by Scheme</span>
+      <div class="scheme-pills">
+        <button class="pill active" data-scheme="ALL">All</button>
+        <button class="pill" data-scheme="MDM">MDM</button>
+        <button class="pill" data-scheme="ICDS">ICDS</button>
+        <button class="pill" data-scheme="PDS">PDS</button>
+        <button class="pill" data-scheme="NREGA">NREGA</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-grid">
+
+    <!-- MAP -->
+    <section class="map-section">
+      <div class="section-tag">Interactive Map</div>
+      <div id="map"></div>
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot mdm"></span>MDM</div>
+        <div class="legend-item"><span class="legend-dot icds"></span>ICDS</div>
+        <div class="legend-item"><span class="legend-dot pds"></span>PDS</div>
+        <div class="legend-item"><span class="legend-dot nrega"></span>NREGA</div>
+      </div>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-block about-block">
+        <div class="block-tag">About</div>
+        <h2 class="sidebar-title">Documenting Welfare on the Ground</h2>
+        <p>This project maps field visits to sites where central government welfare schemes operate — schools, anganwadis, ration shops, and worksites — capturing what implementation looks like in practice.</p>
+      </div>
+
+      <div class="sidebar-block scheme-info">
+        <div class="block-tag">Schemes Covered</div>
+        <ul class="scheme-list">
+          <li>
+            <span class="scheme-badge mdm-bg">MDM</span>
+            <div>
+              <strong>Mid-Day Meal</strong>
+              <p>School nutrition programme</p>
+            </div>
+          </li>
+          <li>
+            <span class="scheme-badge icds-bg">ICDS</span>
+            <div>
+              <strong>Integrated Child Development</strong>
+              <p>Anganwadi centres</p>
+            </div>
+          </li>
+          <li>
+            <span class="scheme-badge pds-bg">PDS</span>
+            <div>
+              <strong>Public Distribution System</strong>
+              <p>Ration shops & food security</p>
+            </div>
+          </li>
+          <li>
+            <span class="scheme-badge nrega-bg">NREGA</span>
+            <div>
+              <strong>National Rural Employment</strong>
+              <p>Work guarantee worksites</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block stat-block">
+        <div class="block-tag">At a Glance</div>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-num" id="districtStat">—</span>
+            <span class="stat-label">Districts</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="videoStat">—</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="schemeStat">4</span>
+            <span class="stat-label">Schemes</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- VIDEO PANEL -->
+  <div id="videoPanel" class="video-panel hidden">
+    <div class="vp-inner">
+      <button class="vp-close" id="vpClose">✕</button>
+      <div class="vp-header">
+        <span class="vp-badge" id="vpScheme"></span>
+        <h3 id="vpDistrict"></h3>
+      </div>
+      <div class="vp-videos" id="vpVideos"></div>
+    </div>
   </div>
+  <div id="vpOverlay" class="vp-overlay hidden"></div>
 
-  <div class="scheme-selector">
-    <label>Scheme</label>
-    <select id="schemeSelect">
-      <option value="ALL">All</option>
-      <option value="MDM">MDM</option>
-      <option value="ICDS">ICDS</option>
-      <option value="PDS">PDS</option>
-      <option value="NREGA">NREGA</option>
-    </select>
-  </div>
-</header>
-
-<main class="main-layout">
-
-  <section class="map-panel">
-    <div id="map"></div>
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <div class="section-tag left">Fieldwork Gallery</div>
+      <h2 class="gallery-title">From the <em>Field</em></h2>
+      <p class="gallery-sub">Images captured during district-level field visits</p>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel">
+        <button class="nav prev">&#8249;</button>
+        <div class="carousel-track">
+          <div class="slide"><img src="./images/img1.jpg" alt="Field visit 1"><div class="slide-caption">Field Visit Documentation</div></div>
+          <div class="slide"><img src="./images/img2.jpg" alt="Field visit 2"><div class="slide-caption">Site Recording</div></div>
+          <div class="slide"><img src="./images/img3.jpg" alt="Field visit 3"><div class="slide-caption">Implementation Observation</div></div>
+          <div class="slide"><img src="./images/img4.jpg" alt="Field visit 4"><div class="slide-caption">Community Interaction</div></div>
+          <div class="slide"><img src="./images/img5.jpg" alt="Field visit 5"><div class="slide-caption">Scheme Documentation</div></div>
+        </div>
+        <button class="nav next">&#8250;</button>
+      </div>
+      <div class="dots"></div>
+    </div>
   </section>
 
-  <aside class="side-panel">
-    <h3>About this project</h3>
-    <p>
-      Field visit videos and images documenting welfare scheme
-      implementation across districts.
-    </p>
-    <div class="placeholder-box">Future content</div>
-  </aside>
-
-</main>
-
-<!-- ---------- Image Gallery ---------- -->
-<section class="image-section">
-  <h3>Fieldwork Gallery</h3>
-
-  <div class="carousel">
-    <button class="nav prev">‹</button>
-
-    <div class="carousel-track">
-      <img src="./images/img1.jpg" alt="">
-      <img src="./images/img2.jpg" alt="">
-      <img src="./images/img3.jpg" alt="">
-      <img src="./images/img4.jpg" alt="">
-      <img src="./images/img5.jpg" alt="">
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Fieldwork India</div>
+      <div class="footer-note">Ground-level documentation of welfare scheme implementation</div>
     </div>
+  </footer>
 
-    <button class="nav next">›</button>
-  </div>
-
-  <div class="dots"></div>
-</section>
-
-<!-- Scripts -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="./js/map.js"></script>
-
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./js/map.js"></script>
 </body>
 </html>
