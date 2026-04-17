@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Fieldwork India — Welfare Scheme Documentation</title>
+  <title>Fieldwork India — Welfare Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
@@ -23,24 +25,107 @@
       <h1 class="hero-title">
         Fieldwork<br><em>Map</em>
       </h1>
-      <p class="hero-sub">Videos from field visits documenting welfare scheme implementation across Indian districts</p>
+      <p class="hero-sub">Videos from field visits documenting welfare schemes, social protection programmes, and digital identification across Indian districts</p>
       <div class="hero-meta">
-        <span>MDM · ICDS · PDS · NREGA</span>
+        <span>Welfare Schemes · Social Protection · Digital ID</span>
         <span class="divider">|</span>
         <span id="videoCount">Loading…</span>
       </div>
     </div>
     <div class="hero-scheme-bar">
-      <span class="filter-label">Filter by Scheme</span>
-      <div class="scheme-pills">
-        <button class="pill active" data-scheme="ALL">All</button>
-        <button class="pill" data-scheme="MDM">MDM</button>
-        <button class="pill" data-scheme="ICDS">ICDS</button>
-        <button class="pill" data-scheme="PDS">PDS</button>
-        <button class="pill" data-scheme="NREGA">NREGA</button>
+      <span class="filter-label">Currently Showing</span>
+      <div class="active-filter-display">
+        <span id="activeFilterLabel">All Categories</span>
       </div>
+      <button class="filter-btn" id="openFilterDialog">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/>
+        </svg>
+        Filter
+      </button>
     </div>
   </header>
+
+  <!-- FILTER DIALOG -->
+  <div id="filterOverlay" class="filter-overlay hidden"></div>
+  <div id="filterDialog" class="filter-dialog hidden">
+    <div class="fd-header">
+      <h2 class="fd-title">Filter by Category</h2>
+      <button class="fd-close" id="closeFilterDialog">✕</button>
+    </div>
+
+    <div class="fd-section">
+      <div class="fd-section-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        All
+      </div>
+      <div class="fd-pills">
+        <button class="fd-pill active" data-scheme="ALL">
+          <span class="fd-pill-dot" style="background:#555"></span>
+          All Categories
+          <span class="fd-count" id="count-ALL"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="fd-section">
+      <div class="fd-section-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        Welfare Schemes
+      </div>
+      <div class="fd-pills">
+        <button class="fd-pill" data-scheme="MDM">
+          <span class="fd-pill-dot" style="background:#e67e22"></span>
+          MDM
+          <small>Mid-Day Meal</small>
+          <span class="fd-count" id="count-MDM"></span>
+        </button>
+        <button class="fd-pill" data-scheme="ICDS">
+          <span class="fd-pill-dot" style="background:#27ae60"></span>
+          ICDS
+          <small>Child Development</small>
+          <span class="fd-count" id="count-ICDS"></span>
+        </button>
+        <button class="fd-pill" data-scheme="PDS">
+          <span class="fd-pill-dot" style="background:#2980b9"></span>
+          PDS
+          <small>Public Distribution</small>
+          <span class="fd-count" id="count-PDS"></span>
+        </button>
+        <button class="fd-pill" data-scheme="NREGA">
+          <span class="fd-pill-dot" style="background:#8e44ad"></span>
+          NREGA
+          <small>Rural Employment</small>
+          <span class="fd-count" id="count-NREGA"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="fd-section">
+      <div class="fd-section-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Social Protection & Digital ID
+      </div>
+      <div class="fd-pills">
+        <button class="fd-pill" data-scheme="Pension">
+          <span class="fd-pill-dot" style="background:#c0392b"></span>
+          Pension
+          <small>Social Security</small>
+          <span class="fd-count" id="count-Pension"></span>
+        </button>
+        <button class="fd-pill" data-scheme="Aadhaar">
+          <span class="fd-pill-dot" style="background:#16a085"></span>
+          Aadhaar
+          <small>Digital Identity</small>
+          <span class="fd-count" id="count-Aadhaar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="fd-footer">
+      <button class="fd-apply" id="applyFilter">Apply Filter</button>
+    </div>
+  </div>
 
   <!-- MAIN CONTENT -->
   <main class="main-grid">
@@ -50,10 +135,14 @@
       <div class="section-tag">Interactive Map</div>
       <div id="map"></div>
       <div class="map-legend">
-        <div class="legend-item"><span class="legend-dot mdm"></span>MDM</div>
-        <div class="legend-item"><span class="legend-dot icds"></span>ICDS</div>
-        <div class="legend-item"><span class="legend-dot pds"></span>PDS</div>
-        <div class="legend-item"><span class="legend-dot nrega"></span>NREGA</div>
+        <div class="legend-title">Categories</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#e67e22"></span>MDM</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#27ae60"></span>ICDS</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#2980b9"></span>PDS</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#8e44ad"></span>NREGA</div>
+        <div class="legend-divider"></div>
+        <div class="legend-item"><span class="legend-dot" style="background:#c0392b"></span>Pension</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#16a085"></span>Aadhaar</div>
       </div>
     </section>
 
@@ -62,39 +151,41 @@
       <div class="sidebar-block about-block">
         <div class="block-tag">About</div>
         <h2 class="sidebar-title">Documenting Welfare on the Ground</h2>
-        <p>This project maps field visits to sites where central government welfare schemes operate — schools, anganwadis, ration shops, and worksites — capturing what implementation looks like in practice.</p>
+        <p>Field visits to schools, anganwadis, ration shops, worksites, pension camps, and Aadhaar enrolment centres — capturing what implementation looks like in practice.</p>
       </div>
 
       <div class="sidebar-block scheme-info">
-        <div class="block-tag">Schemes Covered</div>
+        <div class="block-tag">Welfare Schemes</div>
         <ul class="scheme-list">
           <li>
-            <span class="scheme-badge mdm-bg">MDM</span>
-            <div>
-              <strong>Mid-Day Meal</strong>
-              <p>School nutrition programme</p>
-            </div>
+            <span class="scheme-badge" style="background:#e67e22">MDM</span>
+            <div><strong>Mid-Day Meal</strong><p>School nutrition programme</p></div>
           </li>
           <li>
-            <span class="scheme-badge icds-bg">ICDS</span>
-            <div>
-              <strong>Integrated Child Development</strong>
-              <p>Anganwadi centres</p>
-            </div>
+            <span class="scheme-badge" style="background:#27ae60">ICDS</span>
+            <div><strong>Child Development</strong><p>Anganwadi centres</p></div>
           </li>
           <li>
-            <span class="scheme-badge pds-bg">PDS</span>
-            <div>
-              <strong>Public Distribution System</strong>
-              <p>Ration shops & food security</p>
-            </div>
+            <span class="scheme-badge" style="background:#2980b9">PDS</span>
+            <div><strong>Public Distribution</strong><p>Ration shops & food security</p></div>
           </li>
           <li>
-            <span class="scheme-badge nrega-bg">NREGA</span>
-            <div>
-              <strong>National Rural Employment</strong>
-              <p>Work guarantee worksites</p>
-            </div>
+            <span class="scheme-badge" style="background:#8e44ad">NREGA</span>
+            <div><strong>Rural Employment</strong><p>Work guarantee worksites</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block scheme-info">
+        <div class="block-tag">Social Protection & Digital ID</div>
+        <ul class="scheme-list">
+          <li>
+            <span class="scheme-badge" style="background:#c0392b">Pension</span>
+            <div><strong>Social Security</strong><p>Old age & widow pensions</p></div>
+          </li>
+          <li>
+            <span class="scheme-badge" style="background:#16a085">Aadhaar</span>
+            <div><strong>Digital Identity</strong><p>Biometric ID & its impact</p></div>
           </li>
         </ul>
       </div>
@@ -111,8 +202,8 @@
             <span class="stat-label">Videos</span>
           </div>
           <div class="stat">
-            <span class="stat-num" id="schemeStat">4</span>
-            <span class="stat-label">Schemes</span>
+            <span class="stat-num">6</span>
+            <span class="stat-label">Categories</span>
           </div>
         </div>
       </div>
@@ -160,11 +251,12 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">Fieldwork India</div>
-      <div class="footer-note">Ground-level documentation of welfare scheme implementation</div>
+      <div class="footer-note">Ground-level documentation · Welfare Schemes · Social Protection · Digital ID</div>
     </div>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="./js/map.js"></script>
 </body>
 </html>

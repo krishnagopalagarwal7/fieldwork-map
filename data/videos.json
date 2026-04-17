@@ -1,11 +1,974 @@
 [
   {
+    "district": "Nuapada",
+    "lat": 20.81,
+    "lng": 82.54,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "DHWccFfPswE", "title": "ICDS Supplementary nutrition, Nuapada (Odisha)" }
+    ]
+  },
+  {
     "district": "Ganjam",
     "lat": 19.3871,
     "lng": 85.052,
     "scheme": "ICDS",
     "videos": [
-      { "id": "zB2FdmlpEMg", "title": "Pre-School Education at Anganwadi" }
+      { "id": "zB2FdmlpEMg", "title": "Pre-school education in Ganjam (Odisha)" }
+    ]
+  },
+  {
+    "district": "Bargarh",
+    "lat": 21.35,
+    "lng": 83.63,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "VLZQr1ri2Vg", "title": "Pre-school education (Bargarh), Odisha" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.81,
+    "lng": 82.54,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "cdlOzTd4CZ0", "title": "Washing hands with soap before eating" }
+    ]
+  },
+  {
+    "district": "Bangalore (Rural)",
+    "lat": 13.3,
+    "lng": 77.54,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "UpCR7-fSTis", "title": "2 Eggs conversation (Bangalore Rural)" }
+    ]
+  },
+  {
+    "district": "Bangalore (Rural)",
+    "lat": 13.3,
+    "lng": 77.54,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "WYtoJSnPrc4", "title": "Eggs conversation 1" }
+    ]
+  },
+  {
+    "district": "Umaria",
+    "lat": 23.53,
+    "lng": 80.83,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "NQdkd3vYEv0", "title": "Pre-school education activities at anganwadi, Umaria (Madhya Pradesh)" }
+    ]
+  },
+  {
+    "district": "Alleppey",
+    "lat": 9.5,
+    "lng": 76.34,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "FVDxe3SV7hs", "title": "Pre-school education in Kerala" }
+    ]
+  },
+  {
+    "district": "Umaria",
+    "lat": 23.53,
+    "lng": 80.83,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "5qv111fj2_g", "title": "Pre-school education activity at anganwadi" }
+    ]
+  },
+  {
+    "district": "Dindigul",
+    "lat": 10.3629,
+    "lng": 77.9736,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "ir1ENJDVfrI", "title": "Pre-school education in Tamil Nadu" }
+    ]
+  },
+  {
+    "district": "Kullu",
+    "lat": 31.96,
+    "lng": 77.11,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "22o7SliPKpU", "title": "Mama ho gaya ganja (Kullu District, Himachal Pradesh)" }
+    ]
+  },
+  {
+    "district": "Kinnaur",
+    "lat": 31.65,
+    "lng": 78.48,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "oV3rSPDIM1w", "title": "Pre-school education in Kinnaur (Himachal Pradesh)" }
+    ]
+  },
+  {
+    "district": "Tiruchirappalli",
+    "lat": 10.79,
+    "lng": 78.7,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "L5nQNdXbeNA", "title": "Pre-school education and food, Anganwadi Aysampatti (Trichy, Tamil Nadu)" }
+    ]
+  },
+  {
+    "district": "Nuh",
+    "lat": 28.12,
+    "lng": 77.02,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "6iCDwyAVDHA", "title": "A Day in Nuh Sept2025" }
+    ]
+  },
+  {
+    "district": "Shimoga",
+    "lat": 13.93,
+    "lng": 75.57,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "ceneiyvmTmM", "title": "Preschool education in Shimoga (Karnataka)" }
+    ]
+  },
+  {
+    "district": "Gwalior",
+    "lat": 26.21,
+    "lng": 78.18,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "6E7xQwt-29o", "title": "Pre-school education in Gwalior village" }
+    ]
+  },
+  {
+    "district": "Chittoor",
+    "lat": 13.22,
+    "lng": 79.10,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "nhiBdzcsze4", "title": "Egg time in Chittoor AP" }
+    ]
+  },
+  {
+    "district": "Banaskantha",
+    "lat": 23.33,
+    "lng": 72.15,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "zBvY9Bddlvk", "title": "At the Anganwadi, children learn about personal hygiene early (Banaskantha, Gujarat)" }
+    ]
+  },
+  {
+    "district": "Sundargarh",
+    "lat": 22.12,
+    "lng": 84.04,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "6ygKAe3V_1Y", "title": "Eggs for lunch at anganwadi in Lahunipara (Sundargarh, Odisha)" }
+    ]
+  },
+  {
+    "district": "Kinnaur",
+    "lat": 31.65,
+    "lng": 78.48,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "bFkLFAhzwIM", "title": "Growth monitoring in Kinnaur (HP)" }
+    ]
+  },
+  {
+    "district": "Maruthakudi",
+    "lat": 10.7488,
+    "lng": 78.9924,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "jBLr67QeLSg", "title": "Nursery rhymes at Maruthakudi anganwadi ICDS" }
+    ]
+  },
+  {
+    "district": "Bargarh",
+    "lat": 21.35,
+    "lng": 83.63,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "1yK0bzgFUPk", "title": "Food at the anganwadi, Bargarh 2014" }
+    ]
+  },
+  {
+    "district": "Chhapra",
+    "lat": 25.7811,
+    "lng": 84.7543,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "-Jci1bTRzqY", "title": "Children's second meal of the day at the Chhapra anganwadi Gujarat" }
+    ]
+  },
+  {
+    "district": "Bangalore (Rural)",
+    "lat": 13.3,
+    "lng": 77.54,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "Qx1MmI21cKA", "title": "Eggs" }
+    ]
+  },
+  {
+    "district": "Dindigul",
+    "lat": 10.3620,
+    "lng": 77.9736,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "LIUpcsGIP4g", "title": "Preschool education in Dindigul, TN" }
+    ]
+  },
+  {
+    "district": "Kinnaur",
+    "lat": 31.65,
+    "lng": 78.48,
+    "scheme": "ICDS",
+    "videos": [
+      { "id": "ZXI54BO3d-E", "title": "Kalpa Anganwadi (Kinnaur) singing: chhote chhote bachhon and tan-tan telephone" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "fYl2fx3SW60", "title": "Mangrove planation through NREGA" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "HjGUJ4bT_bY", "title": "Irrigation canal in private fields" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "xSiJ887C9s4", "title": "Mangrove work 2, Sunderbans (West Bengal)" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "qo1FYwzTOac", "title": "Mangrove work 1, Sunderbans (North 24 Parganas, West Bengal)" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "PplNrUHKuPs", "title": "NREGA road in Nadia (North 24 Parganas)" }
+    ]
+  },
+  {
+    "district": "Khunti",
+    "lat": 23.08,
+    "lng": 85.28,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "iOsW0IDuS8k", "title": "NREGA Mango plantation in Khunti (Jharkhand)" }
+    ]
+  },
+  {
+    "district": "Khunti",
+    "lat": 23.08,
+    "lng": 85.28,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "cn15qrafRA4", "title": "First a well thru NREGA, then when irrigation is possible, a mango orchard, most likely under NREGA" }
+    ]
+  },
+  {
+    "district": "Alleppey",
+    "lat": 9.5,
+    "lng": 76.34,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "ArYuGP4k1MQ", "title": "NREGA workers rights" }
+    ]
+  },
+  {
+    "district": "Alleppey",
+    "lat": 9.5,
+    "lng": 76.34,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "tAVnWcg7XnY", "title": "NREGA assets for Dalit hamlet" }
+    ]
+  },
+  {
+    "district": "Thrissur",
+    "lat": 10.52,
+    "lng": 76.21,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "wrCZFfaMbRQ", "title": "Land levelling for cultivation" }
+    ]
+  },
+  {
+    "district": "Surguja",
+    "lat": 22.95,
+    "lng": 83.16,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "SW8_WnhYO3M", "title": "NREGA Fish pond owners share their experience. Lundra block (Surguja District, Chhattisgarh)" }
+    ]
+  },
+  {
+    "district": "North 24 Parganas",
+    "lat": 22.36,
+    "lng": 88.90,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "iKbk7JPxyrM", "title": "Toilet at home (part 1), 2015" }
+    ]
+  },
+  {
+    "district": "Nadia",
+    "lat": 22.53,
+    "lng": 88.09,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "O2IwAL7VY9I", "title": "Women at work in NREGA" }
+    ]
+  },
+  {
+    "district": "Bankura",
+    "lat": 23.14,
+    "lng": 87.03,
+    "scheme": "NREGA",
+    "videos": [
+      { "id": "FRFTkuivbWo", "title": "Fly ash bricks in Bankura (West Bengal)" }
+    ]
+  },
+  {
+    "district": "South West Delhi",
+    "lat": 28.29,
+    "lng": 76.50,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "qqKrIePlH-g", "title": "No network at ration shop" }
+    ]
+  },
+  {
+    "district": "South West Delhi",
+    "lat": 28.29,
+    "lng": 76.50,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "V49cU2jePqs", "title": "Aadhaar leads to exclusion: no network or electricity at the ration shop" }
+    ]
+  },
+  {
+    "district": "South West Delhi",
+    "lat": 28.29,
+    "lng": 76.50,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "hjJjnmDabs4", "title": "No network at ration shop, biometric machine hung on jamun tree" }
+    ]
+  },
+  {
+    "district": "Central Delhi",
+    "lat": 28.66,
+    "lng": 77.21,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "wUKxDvrACcc", "title": "Biometrics don't match people can't get ration" }
+    ]
+  },
+  {
+    "district": "Dhamtari",
+    "lat": 20.70,
+    "lng": 81.55,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "xmCXTTYS5bA", "title": "Is Aadhaar voluntary, and free of cost? Dhamtari, Chhattisgarh" }
+    ]
+  },
+  {
+    "district": "Raigarh",
+    "lat": 21.9,
+    "lng": 83.39,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "FomSf01ORcA", "title": "Does Aadhaar authentication work for the elderly? Raigarh, Chhattisgarh" }
+    ]
+  },
+  {
+    "district": "Rajsamand",
+    "lat": 25.06,
+    "lng": 73.89,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "3Vl5JYTGDgs", "title": "Daakhu Bai&#39;s pension" }
+    ]
+  },
+  {
+    "district": "Jaipur",
+    "lat": 26.91,
+    "lng": 75.79,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "mhsUckMZM_k", "title": "Aadhaar works, but wheat canceled: Jaipur, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Jaipur",
+    "lat": 26.91,
+    "lng": 75.79,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "xbiwo6gp5cc", "title": "Hands washed but Aadhaar doesn't work: Jaipur, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Jaipur",
+    "lat": 26.91,
+    "lng": 75.79,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "2Y6MpB1nU6Y", "title": "Aadhaar works, but wheat 00: Jaipur, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ajmer",
+    "lat": 26.45,
+    "lng": 74.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "MYr1U2a2bB8", "title": "What happens when Aadhaar biometrics don't match?: Masuda, Ajmer, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ajmer",
+    "lat": 26.45,
+    "lng": 74.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "xlN3Wdqtg8A", "title": "Aadhaar errors: Jawaja block, Ajmer, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ajmer",
+    "lat": 26.45,
+    "lng": 74.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "5IZT0tioJ2g", "title": "Does Aadhaar help targeting? Jawaja, Ajmer, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ajmer",
+    "lat": 26.45,
+    "lng": 74.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "zZ7tLybPbl8", "title": "Is anyone accountable for Aadhaar errors? Ajmer, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Jaipur",
+    "lat": 26.91,
+    "lng": 75.79,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "ShZHBM5BaHc", "title": "Is government prepared to use Aadhaar in welfare? Jaipur, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ajmer",
+    "lat": 26.45,
+    "lng": 74.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "ep3d5V9JDd4", "title": "Aadhaar - Is it voluntary, or forced? Jawaja, Ajmer, Rajasthan" }
+    ]
+  },
+  {
+    "district": "Ranga Reddy",
+    "lat": 17.2,
+    "lng": 78.55,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "uSRmiZZO4rE", "title": "Biometric mismatch at PDS outlet no: 1589244 ~~ Rangareddy district, Yapral, Hyderabad" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.34,
+    "lng": 76.35,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "erHvbsMHjus", "title": "Old women describe their troubles with the new Aadhaar payment system (Alwar, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.34,
+    "lng": 76.35,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "y_ZR-zlfyuc", "title": "Chandri who is hard of hearing hasn't got pension for few months (Alwar Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "mQMxBf2zUjI", "title": "Andhra Pradesh: Higher transaction costs with Aadhaar-Based Biometric Authentication (ABBA)" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "N635wJ1KXrg", "title": "Andhra Pradesh: Troubles with Aadhaar-based biometric authentication (ABBA) (Kasimkota Mandal)" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "ejL9t36TKf0", "title": "Please revert to old PDS - i.e., without Aadhaar authentication (Andhra Pradesh)" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "Ws_P_3XrDlY", "title": "Gontina Pydithalli, Konachiamma face persistent Aadhaar-based Biometric Authentication (ABBA) issues" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "uML7-C8ifqc", "title": "The elderly are among the biggest victims of Aadhaar-based Biometric Authentication (ABBA)" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "jU3MQmVIjeI", "title": "PDS dealer describes problems faced by single member households - P1" }
+    ]
+  },
+  {
+    "district": "Visakhapatnam",
+    "lat": 17.41,
+    "lng": 83.12,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "qq4qYz0zKJc", "title": "Bandavidhi salesperson describes ABBA related issues" }
+    ]
+  },
+  {
+    "district": "Anakapalli",
+    "lat": 17.63,
+    "lng": 82.82,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "6AUlvykNkzA", "title": "For people with multiple disadvantages (physical disability, age, widowhood) - ABBA is torture." }
+    ]
+  },
+  {
+    "district": "Anakapalli",
+    "lat": 17.63,
+    "lng": 82.82,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "TQ8bvb8FSNY", "title": "In Kasimkota mandal, lady demands reverting back to the old system ~~ Andhra Pradesh, May' 17" }
+    ]
+  },
+  {
+    "district": "Ranchi",
+    "lat": 23.35,
+    "lng": 85.33,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "yIPXJ8bSCIQ", "title": "Chhutu Swansi, Angara (Ranchi, Jharkhand)" }
+    ]
+  },
+  {
+    "district": "Bikaner",
+    "lat": 28.19,
+    "lng": 73.28,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "eBmEc5YJGVM", "title": "Plight of Sansi families in Panchu (Bikaner, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Bikaner",
+    "lat": 28.19,
+    "lng": 73.28,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "Cn2Er8B-Mxs", "title": "Hariram did not go to the PDS outlet nor did he get an OTP, yet his ration has been lifted!" }
+    ]
+  },
+  {
+    "district": "Bikaner",
+    "lat": 28.19,
+    "lng": 73.28,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "tRsmuXsQQPM", "title": "Meghwal family denied rations due to aadhaar Kudsun, Nokha (Bikaner, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Bikaner",
+    "lat": 28.19,
+    "lng": 73.28,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "QaM8af5urTw", "title": "Kiran and Revti Dawa, Nokha (Bikaner, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.46,
+    "lng": 76.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "Nmw6Pj4AUlY", "title": "Why Jamila prefers to get her pension through the post office (Alwar, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.46,
+    "lng": 76.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "5lzW2tWE1cE", "title": "Saluki's testimony (Alwar, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "East Godavari",
+    "lat": 17.07,
+    "lng": 81.73,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "BriHdAOMorQ", "title": "Entitlements were reduced from 16kg to 4kg after UID-PDS integration (East Godavari, AP)" }
+    ]
+  },
+  {
+    "district": "East Godavari",
+    "lat": 17.07,
+    "lng": 81.73,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "TJ63m9XKo3w", "title": "Jyothi's (East Godavari) bitter experience with the UID-PDS pilot" }
+    ]
+  },
+  {
+    "district": "East Godavari",
+    "lat": 17.07,
+    "lng": 81.73,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "nGLERouqxFg", "title": "Madhubabu botched up case (East Godavari, Andhra Pradesh)" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.46,
+    "lng": 76.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "erHvbsMHjus", "title": "Old women describe their troubles with the new Aadhaar payment system (Alwar, Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Alwar",
+    "lat": 27.46,
+    "lng": 76.64,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "y_ZR-zlfyuc", "title": "Chandri who is hard of hearing hasn't got pension for few months (Alwar Rajasthan)" }
+    ]
+  },
+  {
+    "district": "Surendranagar",
+    "lat": 22.00,
+    "lng": 69.45,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "ufJLOASsX6g", "title": "The troubles with Aadhaar in PDS (Gujarat)" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "ii25gtANXqM", "title": "Jogand sahayak, who distributes grain at the gram panchayat in Komna block about Aadhaar in PDS" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "kd5fVBE2pqU", "title": "Woes of people in rural Odisha after the introduction of Aadhaar based biometric authentication" }
+    ]
+  },
+  {
+    "district": "Bolangir",
+    "lat": 20.57,
+    "lng": 83.2,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "KYwDkZ0l4wY", "title": "Young boy who cannot see, denied enrolment at aadhaar centre" }
+    ]
+  },
+  {
+    "district": "Udaipur",
+    "lat": 24.2,
+    "lng": 73.65,
+    "scheme": "Aadhaar",
+    "videos": [
+      { "id": "JuDPj5DOtkI", "title": "Aadhaar based biometric authentication (ABBA) remains a problem. Kyaria village, Udaipur" }
+    ]
+  },
+  {
+    "district": "Nuh",
+    "lat": 27.54,
+    "lng": 77.10,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "k_4jYdlQYeI", "title": "A govt school kitchen garden in Nuh" }
+    ]
+  },
+  {
+    "district": "Tumakuru",
+    "lat": 12.44,
+    "lng": 76.21,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "i2KwYxv5DOE", "title": "The MDM in Karnataka includes eggs and chikkis. students in this class were asked what's their fav?" }
+    ]
+  },
+  {
+    "district": "Tumakuru",
+    "lat": 12.44,
+    "lng": 76.21,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "A_LroFhsnCo", "title": "In Karnataka, school children get milk (from Nandhini milk powder) when they arrive in the morning." }
+    ]
+  },
+  {
+    "district": "Chitradurga",
+    "lat": 14.2238,
+    "lng": 76.3980,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "j7csQZmxdko", "title": "We want eggs in MDM" }
+    ]
+  },
+  {
+    "district": "Chitradurga",
+    "lat": 14.2238,
+    "lng": 76.3980,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "WNP-SVFglmc", "title": "Veges don't mind if others eat eggs" }
+    ]
+  },
+  {
+    "district": "Shimoga",
+    "lat": 14.23,
+    "lng": 74.78,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "tvIHbMoRzO0", "title": "Raise your hands if you'd like eggs (Shimoga, Karnataka)" }
+    ]
+  },
+  {
+    "district": "Bangalore Rural",
+    "lat": 13.30,
+    "lng": 77.54,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "WYtoJSnPrc4", "title": "Eggs conversation 1" }
+    ]
+  },
+  {
+    "district": "Surguja",
+    "lat": 23.37,
+    "lng": 81.34,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "wpb9-XB08pI", "title": "Demand for eggs in Mid-Day Meal (MDM) in Chhattisgarh" }
+    ]
+  },
+  {
+    "district": "Surguja",
+    "lat": 23.37,
+    "lng": 81.34,
+    "scheme": "MDM",
+    "videos": [
+      { "id": "Iic2LNgggcQ", "title": "Eggs in mid-day meals (MDM) in Chhattisgarh" }
+    ]
+  },
+  {
+    "district": "Shimla",
+    "lat": 31.10,
+    "lng": 77.17,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "IzlVzIWoOsg", "title": "POS machines, online, non-biometric in Shimla (Himachal Pradesh) at a PDS outlet, smart card based" }
+    ]
+  },
+  {
+    "district": "Tiruchirappalli",
+    "lat": 10.79,
+    "lng": 78.7,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "trPO5UZVlDs", "title": "POS machine: Trichy city (Tamil Nadu), online and offline, non-biometric, smart card based" }
+    ]
+  },
+  {
+    "district": "Anakapalli",
+    "lat": 17.65,
+    "lng": 82.95,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "DXAY-K73VXU", "title": "POS machine: Kasimkota (Andhra Pradesh), online, Aadhaar-biometrics" }
+    ]
+  },
+  {
+    "district": "Anakapalli",
+    "lat": 17.65,
+    "lng": 82.95,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "uML7-C8ifqc", "title": "The elderly are among the biggest victims of Aadhaar-based Biometric Authentication (ABBA)" }
+    ]
+  },
+  {
+    "district": "Puducherry",
+    "lat": 11.45,
+    "lng": 79.36,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "0uqVsNHRNI0", "title": "POS machines: Puducherry, smart card based, online and offline" }
+    ]
+  },
+  {
+    "district": "Shimla",
+    "lat": 31.10,
+    "lng": 77.17,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "46_Zk0iD9xw", "title": "Smart card in Shimla PDS outlet" }
+    ]
+  },
+  {
+    "district": "Tiruchirappalli",
+    "lat": 10.79,
+    "lng": 78.7,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "4x9ZhDe1Bic", "title": "Smart card transaction in Trichy full" }
+    ]
+  },
+  {
+    "district": "Raipur",
+    "lat": 21.2514,
+    "lng": 81.6296,
+    "scheme": "PDS",
+    "videos": [
+      { "id": "4Wbood_yIK8", "title": "CORE PDS in Raipur district" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "RqrBaqcT83Q", "title": "Odisha pension transition worries" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "PzkMawKIMA0", "title": "Convenient and protected against corruption -Pension payments in Odisha" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "YIZaGEOo4Gs", "title": "Pension transition fears in Odisha" }
+    ]
+  },
+  {
+    "district": "Nuapada",
+    "lat": 20.64,
+    "lng": 82.48,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "m9MRzmOVHH8", "title": "Cash in hand pension in Nuapda Nov 2019" }
+    ]
+  },
+  {
+    "district": "Mayurbhanj",
+    "lat": 22.01,
+    "lng": 86.42,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "vSZZXpg3ixU", "title": "Old age pension in Mayurbhanj" }
+    ]
+  },
+  {
+    "district": "Ranchi",
+    "lat": 23.35,
+    "lng": 85.33,
+    "scheme": "Pension",
+    "videos": [
+      { "id": "13vZVKPbr0g", "title": "Old man and his wife try to make the transition to Aadhaar pensions through banks" }
     ]
   }
 ]
